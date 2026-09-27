@@ -1,4 +1,4 @@
--- by s3x74
+--deobf by s3x74
 local communicationsDisabled = true
 if communicationsDisabled then
     print("deobf by s3x74")
