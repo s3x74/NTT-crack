@@ -1,4 +1,4 @@
--- by s3x74
+-- deobf by s3x74
 local RECON_SOURCE = [==========[
 
 local __kinglegacy_entry = function(...)
