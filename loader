@@ -1,0 +1,8 @@
+local p = game:GetService("Players").LocalPlayer
+p:WaitForChild("PlayerStats")
+
+_G.prenium = true
+
+loadstring(game:HttpGet(
+    "https://raw.githubusercontent.com/s3x74/NTT-crack/refs/heads/main/NTT-DEOBF-OLD"
+))()
