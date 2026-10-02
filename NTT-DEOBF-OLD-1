@@ -1,0 +1,23 @@
+local u="https://raw.githubusercontent.com/s3x74/NTT-crack/refs/heads/main/NTT-DEOBF-OLD"
+local s=game:HttpGet(u)
+local b=[[                spawn(function()
+                    while task.wait() do
+                        pcall(function()
+                            if getSetting("seaeventvip") and _G.ssv == false then
+                                setCharacterCFrame(CFrame.new(0, 10000, 0))
+                                game:GetService("VirtualInputManager"):SendMouseButtonEvent(0, 0, 0, true, game, 0)
+                                game:GetService("VirtualInputManager"):SendMouseButtonEvent(0, 0, 0, false, game, 0)
+                            end
+                        end)
+                    end
+                end)
+]]
+local a,c=s:gsub(b,"",1)
+if c~=1 then
+    error("patch target not found")
+end
+local f,e=loadstring(a)
+if not f then
+    error(e)
+end
+return f()
